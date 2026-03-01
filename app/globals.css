@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-cream text-slate-900 font-sans antialiased;
+}
+
+body {
+  @apply min-h-screen;
+}
+
+a {
+  @apply text-navy;
+}
+
+.blurred-block {
+  position: relative;
+  overflow: hidden;
+}
+
+.blurred-block-content {
+  filter: blur(4px);
+  pointer-events: none;
+}
+
+.blurred-block-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
